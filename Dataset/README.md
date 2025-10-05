@@ -6,4 +6,21 @@ OpinioBank—a large-scale, high-quality dataset designed to support user-centri
 For more details, please refer to our paper, titled ["OpinioRAG: Towards Generating User-Centric Opinion Highlights from Large-scale Online Reviews"](https://arxiv.org/abs/2509.00285), published at COLM 2025. The dataset is available here: 🤗 [OpinioBank](https://huggingface.co/datasets/tafseer-nayeem/OpinioBank).
 
 
+### Languages
 
+English
+
+### Loading the Dataset
+
+```python
+from datasets import load_dataset
+
+ds = load_dataset("tafseer-nayeem/OpinioBank")
+
+test_dataset = ds["test"]
+
+print(f'Number of samples: {len(test_dataset)}')
+
+```
+
+---
